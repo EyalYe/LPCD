@@ -4,15 +4,17 @@
 Teach the class about sub-threshold design and provide a high-level video summary.
 
 ## Deliverables
-- **Class Presentation (20%)**: A deep dive into the physics and current state of the art.
-- **Short Video Summary (10%)**: A 2-3 minute high-level summary of the topic.
+- **Class Presentation (20%)**: [Presentation Outline](presentation_outline.md) and [Detailed Content/Notes](presentation_content.md) drafted.
+- **Short Video Summary (10%)**: [Video Script](video_script.md) drafted for AI generation.
 
 ## Presentation Outline
-1. **Motivation**: Why extreme low power in nanoscale (14Å) processes?
-2. **Foundations**: Sub-threshold current equations and MEP.
-3. **Challenges**: Speed degradation, noise margins, and variability.
-4. **Conclusion**: Transition to proposed innovation.
+1. **Introduction**: Transitioning from power saving to energy efficiency.
+2. **Foundations**: Sub-VT/Near-VT physics and MEP theory (Calhoun 2005).
+3. **Advanced Techniques**: Overcoming variability with ADVC (Zangi 2018).
+4. **Case Studies**: Edge AI, Biomedical, and Nanoscale industry trends.
+5. **Conclusion**: Transition to proposed innovation.
 
 ## AI Tools
-- [ ] Gemini for slide content generation.
-- [ ] NotebookLM for audio/script generation for the video.
+- [x] Gemini for slide content generation.
+- [x] Gemini for video script drafting.
+- [ ] NotebookLM for audio/script finalization.
