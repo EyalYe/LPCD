@@ -68,6 +68,7 @@ Teach the class about sub-threshold design and provide a high-level video summar
 ---
 
 ## AI Tools
-- [x] Gemini for slide content generation
+- [x] Gemini for initial slide content generation
 - [x] Gemini for video script drafting
+- [x] Claude (Claude Code) for full refactor — restructured into 18 slides with proper timing, deepened research content, and rewrote all speaker notes from scratch
 - [ ] NotebookLM for audio/script finalization
