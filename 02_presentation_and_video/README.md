@@ -6,6 +6,7 @@ Teach the class about sub-threshold design and provide a high-level video summar
 
 ## Deliverables
 - **Class Presentation (20%)**: 4 separate speaker files + shared video script
+- **Kahoot (in-class quiz)**: [kahoot.md](kahoot.md) — all 6 questions, hosted by each speaker after their section
 - **Short Video Summary (10%)**: [Video Script](video_script.md) — 4 sections, one per speaker
 
 ---
@@ -14,11 +15,11 @@ Teach the class about sub-threshold design and provide a high-level video summar
 
 | Speaker | Topic | Slides | Slides Time | Kahoot Qs | Total |
 |---------|-------|--------|-------------|-----------|-------|
-| [Speaker 1](speaker_1_intro_and_context.md) | Introduction & Context | 1–3 | 0:00–10:00 (10 min) | Q3 | ~13 min |
-| [Speaker 2](speaker_2_mep_and_sizing.md) | MEP Theory & Sizing | 4–5 | 10:00–18:00 (8 min) | Q1, Q2 | ~11 min |
-| [Speaker 3](speaker_3_variability_and_advc.md) | Variability & ADVC | 6–7 | 18:00–26:00 (8 min) | Q4, Q5 | ~11 min |
-| [Speaker 4](speaker_4_applications_and_conclusion.md) | Applications & Conclusion | 8–10 | 26:00–33:00 (7 min) | Q6 | ~10 min |
-| **TOTAL** | | **10 slides** | **33 min** | **6 Qs** | **45 min** |
+| [Eyal](speaker_1_intro_and_context(Eyal).md) | Introduction & Context | 1–6 | 0:00–10:00 (10 min) | Q3 | ~13 min |
+| [Omri](speaker_2_mep_and_sizing(Omri).md) | MEP Theory & Sizing | 7–10 | 10:00–18:00 (8 min) | Q1, Q2 | ~11 min |
+| [Eli](speaker_3_variability_and_advc(Eli).md) | Variability & ADVC | 11–14 | 18:00–26:00 (8 min) | Q4, Q5 | ~11 min |
+| [Nadav](speaker_4_applications_and_conclusion(Nadav).md) | Applications & Conclusion | 15–18 | 26:00–33:00 (7 min) | Q6 | ~10 min |
+| **TOTAL** | | **18 slides** | **33 min** | **6 Qs** | **45 min** |
 
 ---
 
@@ -40,18 +41,26 @@ Teach the class about sub-threshold design and provide a high-level video summar
 | Section | Start | End | Duration |
 |---------|-------|-----|----------|
 | Slide 1: Title | 0:00 | 1:00 | 1 min |
-| Slide 2: Motivation | 1:00 | 5:00 | 4 min |
-| Slide 3: Operating Regions | 5:00 | 10:00 | 5 min |
-| **→ Speaker 2 takes over** | | | |
-| Slide 4: MEP Theory | 10:00 | 15:00 | 5 min |
-| Slide 5: Sizing Rules | 15:00 | 18:00 | 3 min |
-| **→ Speaker 3 takes over** | | | |
-| Slide 6: Variability + SRAM | 18:00 | 23:00 | 5 min |
-| Slide 7: ADVC | 23:00 | 26:00 | 3 min |
-| **→ Speaker 4 takes over** | | | |
-| Slide 8: LAXOR | 26:00 | 29:00 | 3 min |
-| Slide 9: IBM 5nm | 29:00 | 32:00 | 3 min |
-| Slide 10: Conclusion | 32:00 | 33:00 | 1 min |
+| Slide 2: End of the Free Lunch (Dennard) | 1:00 | 3:00 | 2 min |
+| Slide 3: Two Problems, One Solution | 3:00 | 5:00 | 2 min |
+| Slide 4: MOSFET Physics Below $V_{th}$ | 5:00 | 7:00 | 2 min |
+| Slide 5: The Three Operating Regimes | 7:00 | 8:30 | 1.5 min |
+| Slide 6: The NTC Sweet Spot (Dreslinski) | 8:30 | 10:00 | 1.5 min |
+| **→ Omri takes over** | | | |
+| Slide 7: Dynamic Energy & The Quadratic Law | 10:00 | 12:00 | 2 min |
+| Slide 8: Leakage Energy + The MEP | 12:00 | 14:30 | 2.5 min |
+| Slide 9: The MEP is Not Fixed | 14:30 | 16:00 | 1.5 min |
+| Slide 10: Sizing for Minimum Energy | 16:00 | 18:00 | 2 min |
+| **→ Eli takes over** | | | |
+| Slide 11: RDF & The Exponential Amplifier | 18:00 | 20:30 | 2.5 min |
+| Slide 12: SRAM — The Weakest Link | 20:30 | 22:30 | 2 min |
+| Slide 13: ADVC Architecture (Zangi 2018) | 22:30 | 24:30 | 2 min |
+| Slide 14: ADVC Silicon Results | 24:30 | 26:00 | 1.5 min |
+| **→ Nadav takes over** | | | |
+| Slide 15: Why BNNs at the Edge? | 26:00 | 27:30 | 1.5 min |
+| Slide 16: LAXOR Architecture & Results | 27:30 | 29:30 | 2 min |
+| Slide 17: IBM 5nm — The Production Frontier | 29:30 | 31:30 | 2 min |
+| Slide 18: The Research Roadmap & Phase 04 | 31:30 | 33:00 | 1.5 min |
 | **→ Kahoot (distributed after each section)** | | | |
 | 6 questions × 2 min | 33:00 | 45:00 | 12 min |
 | **TOTAL** | | | **45 min** |
