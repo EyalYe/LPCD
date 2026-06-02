@@ -1,38 +1,47 @@
 # Video Summary Script: Extreme Low Voltage Computing
-**Duration**: 2.5 Minutes
+**Duration**: 2.5 Minutes (4 speakers, ~37 seconds each)  
 **Target Audience**: Peers (Engineering Students)
 
 ---
 
-## 0:00 - 0:30 | The Hook & Motivation
-**Visual**: Zoom into a microscopic chip with a "Battery Low" icon.
-**Audio**: 
-"We’ve all been there: designing for low power usually means turning things off. But what if the circuit itself was the solution? Welcome to the world of extreme low-voltage computing. Today, we’re moving past standard power gating and diving into the physics of operating *below* the threshold voltage."
+## Speaker 1 | 0:00–0:37 | The Hook & Motivation
+
+**Visual**: Zoom into a microscopic chip with a "Battery Low" icon, then split into three scenes: IoT sensor node, brain implant, 5nm SoC cross-section.
+
+**Audio**:  
+"We've all designed circuits that save power by shutting things off. But what if the circuit itself never needed to fully turn on? Welcome to extreme low-voltage computing — where transistors run on diffusion current, not inversion. We're talking about IoT sensors that never need a battery replacement, brain implants that run for a decade, and AI chips at 5nm where dropping the voltage isn't optional — it's the only way to avoid melting the package."
 
 ---
 
-## 0:30 - 1:15 | The Physics: The MEP
-**Visual**: Dynamic graph showing the Energy vs. Voltage 'U' curve.
-**Audio**: 
-"In sub-threshold design, we operate at voltages so low that transistors never fully turn on. We rely on diffusion current. It’s ultra-efficient, but there’s a catch. As we drop the voltage, the circuit slows down exponentially. This creates the Minimum Energy Point, or MEP. Go too low, and your leakage energy actually increases because the task takes too long to complete. Finding that MEP 'sweet spot' is the key to maximum efficiency."
+## Speaker 2 | 0:37–1:15 | The Physics: The MEP
+
+**Visual**: Dynamic graph showing the Energy vs. Voltage 'U' curve building up — first $E_{dyn}$ decreasing, then $E_{leak}$ rising, then the total with the MEP minimum highlighted at ~300mV.
+
+**Audio**:  
+"In sub-threshold, lowering the voltage reduces dynamic energy quadratically — but slows the circuit exponentially. That creates a Minimum Energy Point — the MEP. Around 300 millivolts in a standard process. Go below it and leakage dominates because the operation simply takes too long. At the MEP, every transistor is minimum-sized — upsizing actually wastes energy in sub-threshold, the opposite of everything you learned in standard design."
 
 ---
 
-## 1:15 - 2:00 | The Solution: ADVC
-**Visual**: A circuit block diagram with sensors lighting up.
-**Audio**: 
-"But at these low voltages, even a tiny temperature shift or process variation can break the logic. That’s where Advanced Adaptive Dynamic Voltage Control—or ADVC—comes in. By using on-die sensors and 'First Fail' monitors, modern chips can track their own health and adjust their voltage in real-time, staying functional and efficient even in the most variable nanoscale processes."
+## Speaker 3 | 1:15–1:52 | The Challenge: Variability & ADVC
+
+**Visual**: Gaussian distribution of threshold voltage across a die — slow and fast tails highlighted. Then a circuit block diagram lighting up with real-time sensors and a feedback loop arrow.
+
+**Audio**:  
+"The catch: a 10-millivolt shift in threshold voltage from random dopant fluctuation causes a 2-to-3 times change in path delay. And SRAM fails before logic does — the read disturb margin collapses first. Worst-case design margins push you right off the MEP. The solution is Adaptive Dynamic Voltage Control — ADVC. On-die sensors feed a First-Fail monitor that trips before any real logic fails, nudging the supply voltage up in microseconds. No static guard-band. The chip tracks its own MEP in real-time."
 
 ---
 
-## 2:00 - 2:30 | The Future & Conclusion
-**Visual**: Fast montage: A futuristic medical patch, an AI drone, a tiny solar harvester.
-**Audio**: 
-"From biomedical implants that last a decade to Edge AI accelerators running on microwatts, extreme low-voltage computing is transforming the industry. It’s not just about saving power; it’s about enabling technologies that were previously impossible. Thanks for watching!"
+## Speaker 4 | 1:52–2:30 | The Future & Conclusion
+
+**Visual**: Fast montage — LAXOR latch-XOR array, IBM 5nm chip die shot, a neural implant patch, an Edge AI drone. End on the research timeline: Calhoun 2005 → IBM 2024 → Phase 04.
+
+**Audio**:  
+"In 2023, the LAXOR accelerator hit 2315 TOPS per watt by replacing flip-flops with latches — eliminating the most energy-wasteful element in sub-threshold AI hardware. In 2024, IBM's 5nm SoC used near-threshold computing not to save a battery, but to prevent thermal shutdown — a 41% gain in BERT-Large throughput through hardware-software co-design. From biomedical implants to frontier AI, extreme low-voltage computing is no longer a research curiosity. It is the only path forward. Thanks for watching."
 
 ---
 
 ## Technical Notes for NotebookLM Integration
-- **Source Material**: Provide `01_study_and_survey/papers_summary.md` and `02_presentation_and_video/presentation_content.md` to NotebookLM as context.
-- **Audio Profile**: Professional yet enthusiastic, peer-to-peer educational tone.
-- **Key Terms to Emphasize**: Minimum Energy Point, Sub-threshold, ADVC, Nanoscale.
+- **Source Material**: Provide `01_study_and_survey/papers_summary.md` and `02_presentation_and_video/speaker_*` files to NotebookLM as context.
+- **Audio Profile**: Professional yet enthusiastic, peer-to-peer educational tone. Each speaker segment should sound like a distinct voice.
+- **Key Terms to Emphasize**: Minimum Energy Point, Sub-threshold, ADVC, FFail, LAXOR, Near-Threshold Computing.
+- **Speaker transitions**: brief 0.5-second pause between speakers; no music break needed.
