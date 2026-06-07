@@ -108,39 +108,37 @@
 - Final line: "From 2005 theory to a 2023 edge-AI chip, the answer hasn't changed — in extreme low-power design, **the cheapest operation is the one you never had to move.** Thank you — questions?"
 
 ---
-
 ## Kahoot Questions (Speaker 4)
 
-**Q1.** In a Binary Neural Network (BNN), the expensive multiply-accumulate is replaced by…
-- A) Floating-point matrix multiply
-- ✅ **B) XNOR + popcount (count the matching bits)**
-- C) Analog integration only
-- D) A larger clock frequency
+**Q1. In a Binary Neural Network (BNN), the expensive multiply-accumulate operation collapses into...**
+* A) Floating-point matrix multiplication
+* ✅ **B) XNOR + popcount (1-bit logic)**[cite: 1]
+* C) Analog integration and current summation
+* D) High-frequency voltage scaling
 
-**Q2.** What is the key idea of LAXOR's 10-transistor Latch-XOR cell?
-- A) It stores weights in external DRAM for capacity
-- ✅ **B) It fuses storage and compute — the latch holds the weight and computes (weight ⊕ input) in-situ, eliminating data movement**
-- C) It uses analog current summing for accuracy
-- D) It raises the supply voltage to speed up the XOR
+**Q2. Analog compute-in-memory is highly efficient for BNNs. Why does LAXOR reject it in favor of an all-digital approach?**
+* A) Digital chips are cheaper to manufacture
+* B) Analog computing cannot perform XNOR operations
+* ✅ **C) Analog is highly sensitive to noise and process variability (like RDF) at low voltages**[cite: 1]
+* D) Digital circuits ignore leakage energy entirely
 
-**Q3.** Compared with analog/mixed-signal compute-in-memory, LAXOR's digital approach is…
-- A) Less accurate but smaller
-- ✅ **B) Bit-accurate — no accuracy loss from noise/temperature/process (RDF) non-idealities**
-- C) Only usable above 1 V
-- D) Dependent on approximate computing
+**Q3. How does LAXOR’s "Latch-XOR" design win energy efficiency without sacrificing bit-accuracy?**
+* A) It allows bounded errors and corrects them later[cite: 1]
+* ✅ **B) It fuses storage and compute in-situ, eliminating the energy tax of moving data**[cite: 1]
+* C) It uses High-Threshold Voltage (HVT) devices to stop leakage[cite: 1]
+* D) It routes all weight data to an external DRAM chip[cite: 1]
 
-**Q4.** LAXOR's headline efficiency result in 28 nm is…
-- ✅ **A) 2315 TOPS/W — ~3.4× better than the best synthesized-digital BNN accelerator**
-- B) Exactly equal to analog compute-in-memory
-- C) 18 µW/MHz
-- D) 85% PDAP reduction
+**Q4. LAXOR’s simulations show that Standard Threshold Voltage (SVT) devices work at 0.5 V, but High-Threshold Voltage (HVT) devices fail. This demonstrates that...**
+* A) HVT devices should always be avoided in digital design
+* ✅ **B) At ultra-low voltages, variability requires strict, corner-aware device selection**[cite: 1]
+* C) Clock frequency matters more than voltage margins
+* D) Leakage energy decreases as voltage drops
 
-**Q5.** The recurring theme that LAXOR confirms for low-power design is…
-- A) Raw transistor speed is what minimizes energy
-- ✅ **B) Cutting switching activity and data movement beats device speed for energy efficiency**
-- C) Approximate computing is always required
-- D) Leakage energy can be ignored at low voltage
-
+**Q5. Looking at the big picture of this entire talk, what is the ultimate lesson of architectures like LAXOR for extreme low-power design?**
+* A) Increasing raw transistor speed is the best way to save energy
+* B) Approximate computing is the only way to survive subthreshold variability[cite: 1]
+* ✅ **C) Cutting data movement and switching activity beats raw device speed for energy efficiency**[cite: 1]
+* D) Subthreshold leakage can be completely eliminated by smart routing
 ---
 
 ## Visuals to prepare
