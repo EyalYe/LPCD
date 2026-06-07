@@ -1,0 +1,49 @@
+Kahoot Questions (MEP)
+
+Question:
+What creates the Minimum Energy Point (MEP)?
+
+A. Leakage energy decreases faster than dynamic energy.
+B. Dynamic energy and leakage energy both decrease.
+C. Dynamic energy decreases while leakage energy increases. (correct)
+D. Performance becomes maximum.
+
+Question:
+Why does leakage energy increase when VDD becomes very low?
+
+A. The threshold voltage decreases significantly.
+B. The transistor operates in strong inversion.
+C. The switching activity increases.
+D. The execution delay (td) becomes longer. (correct)
+
+Question:
+What is a major challenge in Near-Threshold Computing (NTC)?
+
+A. Leakage energy becomes the dominant energy source in all cases.
+B. SRAM and logic have different optimal voltages. (correct)
+C. Logic and SRAM cannot communicate at different voltages.
+D. SRAM requires a lower voltage than logic for minimum energy.
+
+Question:
+Why are separate voltage domains used in NTC systems?
+
+A. To reduce leakage energy by turning off SRAM during computation.
+B. To improve communication speed between SRAM and logic.
+C. To allow SRAM and logic to operate near their own MEPs. (correct)
+D. To eliminate the need for level converters.
+
+Question:
+What was the main drawback of using larger transistors?
+
+A. They increase capacitance and therefore increase energy. (correct)
+B. They increase the threshold voltage.
+C. They reduce the drive current.
+D. They make the circuit slower at all supply voltages.
+
+Question:
+What was the correct order used to evaluate whether larger transistors can reduce energy consumption?
+
+A. Build an FIR Filter → Create optimized standard cells → Find the minimum working VDD with a Ring Oscillator.
+B. Create optimized standard cells → Build an FIR Filter → Find the minimum working VDD with a Ring Oscillator.
+C. Find the minimum working VDD with a Ring Oscillator → Create optimized standard cells → Build an FIR Filter. (correct)
+D. Find the minimum working VDD with a Ring Oscillator → Build an FIR Filter → Create optimized standard cells.
