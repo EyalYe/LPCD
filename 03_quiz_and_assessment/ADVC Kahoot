@@ -1,0 +1,51 @@
+Kahoot questions (ADVC):
+Question:
+What limits how low we can reduce the voltage in a chip?
+
+A. The chip must use less memory.
+B. The clock frequency must stay exactly constant.
+C. The critical path must still finish within one clock cycle. (correct)
+D. The battery voltage must be higher than the core voltage.
+
+Question:
+Why do real chips usually not operate all the way down at the Minimum Energy Point?
+
+A. Because the chip would consume too much dynamic power.
+B. Because voltage that low can cause reliability performance problems. (correct)
+C. Because below a certain voltage, the power saved becomes negligible.
+D. Because the chip no longer needs adaptive voltage control.
+
+Question:
+What is one advantage of dynamic voltage control, such as ADVC, compared to using fixed safety margins?
+
+A. It makes every chip run at the exact same voltage.
+B. It removes the need for timing checks.
+C. It can choose a voltage for each specific chip instead of using one worst-case voltage for all chips. (correct)
+D. It increases the clock period automatically.
+
+Question:
+How do we know that the in-line DLL delay has been matched to the critical path delay?
+
+A. When the DLL is completely bypassed.
+B. When the chip reaches its maximum possible frequency.
+C. When the total measured delay becomes twice the original delay measured with the DLL bypassed. (correct)
+D. When the voltage reaches the Minimum Energy Point.
+
+Question:
+What is the role of the First-Fail mechanism in ADVC?
+
+A. To increase the chip’s clock frequency automatically.
+B. To determine the delay of the critical path of the chip.
+C. To find the minimum voltage where the chip can still meet timing for the selected frequency. (correct)
+D. To keep the chip at one fixed worst-case voltage.
+
+Question:
+When should the first fail sensor be used?
+
+A. Every time the user changes the clock frequency.
+B. Whenever there is a significant change of temperature.
+C. Whenever the user turn on/off a clock.
+D. All of the above. (correct)
+
+
+
