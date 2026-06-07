@@ -39,3 +39,9 @@ In advanced nodes (5nm, 3nm, and the upcoming 14Å), power density is so high th
 
 ### B. Specialized Logic (Latch-XOR)
 Traditional flip-flops are energy-heavy. Modern AI accelerators (**LAXOR, 2023**) use Latch-based designs to minimize switching activity and leakage in the sub-VT regime, enabling microwatt-level Binary Neural Networks (BNNs).
+
+## 6. Complementary Technique: Approximate Computing
+**Schlachter, Camus & Enz (2015)** — [local PDF](./Near_Sub-Threshold_Circuits_and_Approximate_Computing_The_Perfect_Combination_for_Ultra-Low-Power_Systems.pdf) — argue that approximate computing is a natural partner for near/sub-threshold operation in error-tolerant workloads.
+- **Why they combine well**: Approximate arithmetic units (e.g., adders/multipliers with truncated or simplified carry chains) have **shorter critical paths**. This directly counters the exponential delay growth and timing-variability problems that dominate the sub-VT regime.
+- **Multiplicative savings**: The energy reduction from relaxing exactness *stacks on top of* the quadratic $V_{DD}^2$ savings from voltage scaling — yielding gains neither technique reaches alone.
+- **Caveat**: Only applicable where bounded output error is acceptable (DSP, multimedia, ML), and the accuracy/energy trade-off must be co-designed with the variability budget.
