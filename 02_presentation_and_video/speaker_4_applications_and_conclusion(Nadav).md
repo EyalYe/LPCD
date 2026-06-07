@@ -1,7 +1,7 @@
 # Speaker 4 — RDF, Applications & Conclusion (Nadav)
 
 **Topic:** Robustness & a Modern Use Case — *From the variability root cause to a bit-accurate edge-AI accelerator, then wrap the whole story.*
-**Time:** 24:00 – 33:00 (9 min slides, ~13 min with Q&A) — closes the talk.
+**Time:** 30:00 – 39:00 (9 min slides, ~13 min with Q&A) — closes the talk.
 **Papers owned:** [4] Li, Yamasaki, Mani, Do, Chen & Wang, *LAXOR: A Bit-Accurate BNN Accelerator with Latch-XOR Logic for Local Computing* (IEEE/ACM ISLPED 2023, SUTD + A\*STAR).
 **Goal:** Tie off the variability thread (RDF → why robust, *bit-accurate* digital design matters), present LAXOR as the modern industry use case of the "energy-first" philosophy, and deliver the conclusion for the whole talk.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## Slide 1 — Recap & The Robustness Fork (24:00 – 25:30)  ⟵ *the RDF bridge*
+## Slide 1 — Recap & The Robustness Fork (30:00 – 31:30)  ⟵ *the RDF bridge*
 
 **On screen**
 - One-line recap of the arc so far: *physics & MEP (Omri) → adaptive tracking in silicon (Eli) → now: what do we actually run on these chips?*
@@ -25,7 +25,7 @@
 
 ---
 
-## Slide 2 — The Workload: Binary Neural Networks at the Edge (25:30 – 27:00)
+## Slide 2 — The Workload: Binary Neural Networks at the Edge (31:30 – 33:00)
 
 **On screen**
 - **Edge / AIoT** needs ML inference on a coin cell or harvested power — the exact energy-first regime this whole talk targets.
@@ -44,7 +44,7 @@
 
 ---
 
-## Slide 3 — LAXOR's Core Idea: Fuse Storage + Compute (27:00 – 28:45)
+## Slide 3 — LAXOR's Core Idea: Fuse Storage + Compute (33:00 – 34:45)
 
 **On screen**
 - **Custom 10-transistor Latch-XOR cell** — the headline contribution:
@@ -63,7 +63,7 @@
 
 ---
 
-## Slide 4 — Popcount, Architecture & the Simulator (28:45 – 30:15)
+## Slide 4 — Popcount, Architecture & the Simulator (34:45 – 36:15)
 
 **On screen**
 - **PCL popcount** (parallel-counter + carry-look-ahead hybrid) for the accumulation step:
@@ -79,7 +79,7 @@
 
 ---
 
-## Slide 5 — Results & Why It Validates the Whole Talk (30:15 – 31:45)
+## Slide 5 — Results & Why It Validates the Whole Talk (36:15 – 37:45)
 
 **On screen**
 - **2315 TOPS/W in 28 nm** — **3.4×** better than the best synthesized-digital BNN accelerator (up to **37.8×** vs. others).
@@ -93,7 +93,7 @@
 
 ---
 
-## Slide 6 — Conclusion: The Arc of the Field (31:45 – 33:00)
+## Slide 6 — Conclusion: The Arc of the Field (37:45 – 39:00)
 
 **On screen — the timeline we promised in Slide 7 (Eyal):**
 > **Theory of the optimum (1, 2005)** → **the NTC sweet spot (2, 2010)** → **a complementary efficiency axis (5, 2015)** → **production silicon vs. variability (3, 2018)** → **a modern edge-AI use case (4, 2023)**
